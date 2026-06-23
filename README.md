@@ -5,10 +5,6 @@
 
 ---
 
-###  What We Do? ❓
-
-We focus on developing practical software skills:
-
 - Full-stack web development
 - Backend API development
 - Frontend application development
@@ -22,11 +18,6 @@ We focus on developing practical software skills:
 <p align="center">
   <img src="profile/assets/learning-motion.svg" alt="Learning in Motion" width="100%" />
 </p>
-
-
-###  Collaboration 💖
-
-redAcademy encourages collaboration, communication, and continuous improvement.
 
 Projects here are often built by teams, giving learners experience with:
 
