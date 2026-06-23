@@ -1,1 +1,46 @@
+<svg width="1200" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #080808; }
+    .grid { stroke: #e31b23; stroke-opacity: .22; stroke-width: 1; }
+    .title { font: 800 42px Arial, sans-serif; fill: #fff; letter-spacing: 1px; }
+    .accent { fill: #e31b23; }
+    .scan {
+      fill: url(#grad);
+      opacity: .7;
+      animation: slide 3s infinite linear;
+    }
+    .dot {
+      fill: #e31b23;
+      opacity: .8;
+      animation: pulse 1.8s infinite ease-in-out;
+    }
+    @keyframes slide {
+      from { transform: translateX(-500px); }
+      to { transform: translateX(1200px); }
+    }
+    @keyframes pulse {
+      0%,100% { opacity: .25; }
+      50% { opacity: 1; }
+    }
+  </style>
 
+  <defs>
+    <linearGradient id="grad" x1="0" x2="320" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e31b23" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#e31b23" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#e31b23" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="bg" width="1200" height="120" rx="18"/>
+  <path class="grid" d="M0 90 C180 20 320 160 520 70 S850 10 1200 80"/>
+  <path class="grid" d="M0 105 C250 35 420 145 650 80 S980 5 1200 50"/>
+  <rect class="scan" width="320" height="120"/>
+
+  <circle class="dot" cx="90" cy="32" r="3"/>
+  <circle class="dot" cx="1050" cy="84" r="3"/>
+  <circle class="dot" cx="970" cy="28" r="2"/>
+
+  <rect x="48" y="35" width="8" height="50" rx="4" class="accent"/>
+  <text x="78" y="76" class="title">Welcome to redAcademy</text>
+</svg>
